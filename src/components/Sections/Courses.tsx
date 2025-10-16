@@ -54,10 +54,11 @@ const Courses = () => {
         <div className="admission-info">
           <h3>Admissions Open Now!</h3>
           <p>Don't miss the opportunity to achieve your academic goals with Spark Learning Hub.</p>
-          <p className="highlight">Contact us for personalized guidance!</p>
           <a href="tel:+917019682889" className="contact-button">Call Now: 070196 82889</a>
         </div>
       </div>
     </section>
   );
 };
+
+export default Courses;
