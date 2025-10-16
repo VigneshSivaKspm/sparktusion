@@ -70,21 +70,19 @@ const Header = () => {
 
   return (
     <>
-      {/* Accessibility: A 'Skip to content' link is great for keyboard users */}
       <a href="#main-content" className="skip-link">Skip to content</a> 
 
       <header className="site-header">
         <div className="container header-container">
           <nav className="navbar" role="navigation" aria-label="Main">
             <a href="/" className="logo">
-              SPARK<span>TUITION CENTRE</span>
+              Spark <span>Learning Hub</span>
             </a>
 
             <button
               ref={menuButtonRef}
               className="menu-toggle"
               onClick={(e) => { e.stopPropagation(); toggleMenu(); }}
-              aria-expanded={isMenuOpen}
               aria-controls="site-navigation"
               aria-label={isMenuOpen ? 'Close navigation menu' : 'Open navigation menu'}
             >

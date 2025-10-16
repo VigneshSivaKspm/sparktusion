@@ -13,7 +13,7 @@ const About = () => {
           <div className="about-text">
             <h3>We Are Committed To Student Success</h3>
             <p>
-              SPARK TUITION CENTRE was founded with a simple mission: to provide high-quality, 
+              Spark Learning Hub was founded with a simple mission: to provide high-quality, 
               personalized education that empowers students to reach their full potential. 
               Our experienced tutors work closely with each student to identify their strengths 
               and areas for improvement.

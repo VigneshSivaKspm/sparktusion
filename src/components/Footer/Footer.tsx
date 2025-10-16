@@ -17,7 +17,6 @@ const Footer = () => {
   ];
 
   const socialLinks = [
-    { id: 1, icon: 'facebook-f', href: '#' },
     { id: 2, icon: 'twitter', href: '#' },
     { id: 3, icon: 'instagram', href: '#' },
     { id: 4, icon: 'linkedin-in', href: '#' }
@@ -28,9 +27,9 @@ const Footer = () => {
       <div className="container">
         <div className="footer-content">
           <div className="footer-column">
-            <h3>SPARK TUITION CENTRE</h3>
+            <h3>Spark Learning Hub</h3>
             <p>
-              Providing quality education and personalized tutoring to help students
+              Providing quality education and personalized tutor to help students
               achieve academic excellence since 2010. Join us on the journey to
               academic success.
             </p>
@@ -87,7 +86,7 @@ const Footer = () => {
 
         <div className="footer-bottom">
           <div className="copyright">
-            <p>&copy; {new Date().getFullYear()} SPARK TUITION CENTRE. All Rights Reserved.</p>
+            <p>&copy; {new Date().getFullYear()} Spark Learning Hub. All Rights Reserved.</p>
           </div>
           <div className="footer-bottom-links">
             <a href="#">Privacy Policy</a>
@@ -98,5 +97,4 @@ const Footer = () => {
     </footer>
   );
 };
-
 export default Footer;
