@@ -1,0 +1,124 @@
+.teachers {
+  background: linear-gradient(180deg, rgba(255,255,255,0.02), transparent);
+  position: relative;
+}
+
+.teachers-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 30px;
+  margin-bottom: 50px;
+}
+
+.teacher-card {
+  background: var(--surface);
+  border-radius: 15px;
+  padding: 26px;
+  box-shadow: var(--shadow-md);
+  border: 1px solid var(--glass-border);
+  transition: transform 0.22s ease, box-shadow 0.22s;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  min-height: 220px;
+}
+
+.teacher-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 25px rgba(2,6,23,0.3);
+  border-color: var(--primary);
+  background: linear-gradient(
+    135deg,
+    var(--surface) 0%,
+    rgba(255, 255, 255, 0.02) 100%
+  );
+}
+
+.teacher-social {
+  display: flex;
+  gap: 15px;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.teacher-social a {
+  width: 35px;
+  height: 35px;
+  background: transparent;
+  border: 2px solid var(--primary);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--primary);
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.teacher-social a:hover {
+  background: var(--primary);
+  color: var(--bg);
+  transform: translateY(-3px);
+}
+
+.teacher-info {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.teacher-info h3 {
+  font-size: 1.3rem;
+  color: var(--primary);
+  font-weight: 600;
+  letter-spacing: 0.5px;
+}
+
+.teacher-info h4 {
+  color: var(--text);
+  font-size: 1rem;
+  font-weight: 500;
+  opacity: 0.9;
+}
+
+.teacher-info p {
+  color: var(--text);
+  font-size: 0.9rem;
+  line-height: 1.6;
+  opacity: 0.7;
+  margin: 5px 0;
+}
+
+.teachers-cta {
+  text-align: center;
+  background: linear-gradient(90deg, rgba(110,231,183,0.08), rgba(124,92,255,0.06));
+  padding: 40px;
+  border-radius: 15px;
+  border: 1px solid var(--glass-border);
+}
+
+.teachers-cta h3 {
+  color: var(--primary);
+  font-size: 1.8rem;
+  margin-bottom: 15px;
+}
+
+.teachers-cta p {
+  color: var(--muted);
+  margin-bottom: 25px;
+}
+
+@media (max-width: 768px) {
+  .teachers-grid {
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  }
+  
+  .teacher-info h3 {
+    font-size: 1.2rem;
+  }
+  .teacher-card {
+    min-height: auto;
+    padding: 20px;
+  }
+}
