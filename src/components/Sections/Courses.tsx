@@ -54,7 +54,7 @@ const Courses = () => {
         <div className="admission-info">
           <h3>Admissions Open Now!</h3>
           <p>Don't miss the opportunity to achieve your academic goals with Spark Learning Hub.</p>
-          <a href="tel:+917019682889" className="contact-button">Call Now: 070196 82889</a>
+          <a href="tel:+91733959616" className="contact-button">Call Now: 81 222 07891</a>
         </div>
       </div>
     </section>
