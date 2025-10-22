@@ -23,6 +23,32 @@
   min-height: 220px;
 }
 
+/* New card header & avatar */
+.teacher-card-header {
+  display: flex;
+  gap: 16px;
+  align-items: center;
+  margin-bottom: 12px;
+}
+
+.teacher-avatar {
+  width: 64px;
+  height: 64px;
+  border-radius: 12px;
+  background: linear-gradient(135deg, var(--primary), rgba(124,92,255,0.85));
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+  font-size: 1.05rem;
+  box-shadow: 0 6px 18px rgba(2,6,23,0.12);
+}
+
+.teacher-avatar.alt {
+  background: linear-gradient(135deg, #6ee7b7, #7c5cff);
+}
+
 .teacher-card:hover {
   transform: translateY(-5px);
   box-shadow: 0 12px 25px rgba(2,6,23,0.3);
@@ -68,11 +94,16 @@
   gap: 10px;
 }
 
-.teacher-info h3 {
-  font-size: 1.3rem;
+.teacher-card h3 {
+  font-size: 1.25rem;
   color: var(--primary);
-  font-weight: 600;
-  letter-spacing: 0.5px;
+  margin: 0;
+}
+
+.role {
+  color: var(--muted);
+  font-size: 0.95rem;
+  margin-top: 4px;
 }
 
 .teacher-info h4 {
@@ -88,6 +119,76 @@
   line-height: 1.6;
   opacity: 0.7;
   margin: 5px 0;
+}
+
+.teacher-card-body {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-top: 4px;
+}
+
+.summary {
+  color: var(--text);
+  font-size: 0.95rem;
+  line-height: 1.5;
+  margin: 0;
+  opacity: 0.95;
+}
+
+.list.competencies {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 6px;
+}
+
+.list.competencies li::before {
+  content: "•";
+  color: var(--primary);
+  display: inline-block;
+  width: 1em;
+  margin-left: -1em;
+}
+
+.offerings ul {
+  margin: 6px 0 0 0;
+  padding-left: 1.1rem;
+}
+
+.meta {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 12px;
+  margin-top: 8px;
+}
+
+.education strong { margin-right: 6px; }
+
+.contact {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.contact-btn {
+  background: var(--primary);
+  color: var(--bg);
+  padding: 8px 12px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: 600;
+  box-shadow: 0 8px 20px rgba(124,92,255,0.08);
+}
+
+.contact-btn:hover { transform: translateY(-3px); }
+
+.price {
+  color: var(--muted);
+  font-weight: 600;
 }
 
 .teachers-cta {
@@ -121,4 +222,5 @@
     min-height: auto;
     padding: 20px;
   }
+  .meta { flex-direction: column; align-items: flex-start; gap: 6px; }
 }
