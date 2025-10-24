@@ -69,6 +69,23 @@
   margin-right: auto;
 }
 
+.hero-subheadline {
+  font-size: 1.4rem;
+  color: var(--primary);
+  font-weight: 600;
+  margin-bottom: 28px;
+}
+
+.btn.btn-whatsapp {
+  background: #25d366;
+  color: #fff;
+  border: none;
+  transition: background 0.2s;
+}
+.btn.btn-whatsapp:hover {
+  background: #128c7e;
+}
+
 .hero-buttons {
   display: flex;
   gap: 20px;

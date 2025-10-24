@@ -62,6 +62,39 @@ const Expertise = () => {
           ))}
         </div>
 
+        {/* Additional blocks moved from About: Teaching Philosophy, Faculty Experience, Mission & Values, Our Achievements */}
+        <div className="additional-sections">
+          <div className="section-block">
+            <h3>Teaching Philosophy</h3>
+            <p>
+              Our teaching philosophy is built on three core principles: understanding individual
+              learning styles, fostering critical thinking, and providing practical application of
+              concepts. We believe in creating an environment where students are encouraged to ask
+              questions and explore ideas deeply.
+            </p>
+          </div>
+
+          <div className="section-block">
+            <h3>Faculty Experience</h3>
+            <p>
+              Our faculty comprises distinguished educators from premier institutions including IIT
+              and NIT graduates. With their extensive academic and industry experience, they bring a
+              unique blend of theoretical knowledge and practical insights to the classroom.
+            </p>
+          </div>
+
+          <div className="section-block">
+            <h3>Mission &amp; Values</h3>
+            <p>
+              Our mission is to nurture future leaders through quality education and holistic
+              development. We value integrity, innovation, excellence, and student-centered learning
+              in everything we do.
+            </p>
+          </div>
+
+          {/* Our Achievements removed as requested */}
+        </div>
+
         <div className="expertise-stats">
           <div className="stat">
             <div className="stat-number">1000+</div>

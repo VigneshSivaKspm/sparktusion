@@ -7,6 +7,8 @@ import Teachers from './components/Sections/Teachers';
 import Expertise from './components/Sections/Expertise';
 import Contact from './components/Sections/Contact';
 import Footer from './components/Footer/Footer';
+import FloatingWhatsApp from './components/FloatingWhatsApp/FloatingWhatsApp';
+import PopupForm from './components/PopupForm/PopupForm';
 import './styles/global.css';
 
 export default function App() {
@@ -76,6 +78,8 @@ export default function App() {
         <Contact />
       </main>
       <Footer />
+      <FloatingWhatsApp />
+      <PopupForm />
     </>
   );
 }

@@ -2,122 +2,149 @@ import './Teachers.css';
 
 const Teachers = () => {
   return (
-    <section className="teachers" id="teachers">
+    <section className="teachers-section" id="teachers">
       <div className="container">
-        <div className="section-title">
-          <h2>Our Teachers</h2>
-          <p>Meet our experienced educators — crafted profiles to help you choose the right mentor.</p>
-        </div>
+        {/* Section Header */}
+        <header className="section-header">
+          <h2>Our Expert Educators</h2>
+          <p>Meet our highly experienced mentors. Detailed profiles help you find the perfect match for your academic goals.</p>
+        </header>
 
+        {/* Teachers Grid */}
         <div className="teachers-grid">
-          {/* Profile 1: Spoken English Specialist */}
-          <article className="teacher-card highlight" aria-labelledby="teacher-english">
-            <header className="teacher-card-header">
-              <div className="teacher-avatar" aria-hidden="true">TE</div>
-              <div>
-                <h3 id="teacher-english">Spoken English Specialist</h3>
-                <p className="role">Specialist in Spoken English & Communication Skills</p>
-              </div>
-            </header>
-
-            <div className="teacher-card-body">
-              <h4 className="subhead">Professional summary</h4>
-              <p className="summary">With over 32 years of disciplined service in the National Cadet Corps (NCC) and experience as an Administrative Officer interacting nationwide with principals, teachers and students, this educator brings a unique blend of leadership, discipline and communication expertise to the classroom. Now retired from active service, the focus is on helping learners gain confidence and fluency in Spoken English.</p>
-
-              <h4 className="subhead">Key competencies</h4>
-              <ul className="list competencies">
-                <li>Mastery of English language (academic & conversational)</li>
-                <li>Extensive exposure to multi-regional, multi-lingual Indian learner populations</li>
-                <li>Ability to build trust and rapport quickly (leveraging defence-grounded leadership)</li>
-                <li>Strong pedagogic foundation: B.Sc., B.Ed., M.A. (English) & MBA — Indira Gandhi National Open University</li>
-                <li>Tailoring of sessions for adults & young learners: presentation, interview, debate, everyday communication</li>
-              </ul>
-
-              <h4 className="subhead">Teaching / service highlights</h4>
-              <ul className="list competencies">
-                <li>Served the NCC for 32 years, collaborating and interacting with educational institutions across India</li>
-                <li>Engaged with school principals, teachers and cadets as an Administrative Officer — developing an understanding of institutional needs and learner mindsets</li>
-                <li>Transitioned into formal teaching roles in multiple schools, bringing structure, clarity and purposeful communication into learning environments</li>
-                <li>Driven by the vision of transforming learners into confident communicators in English for professional, academic and social contexts</li>
-              </ul>
-
-              <h4 className="subhead">What is offered</h4>
-              <ul className="list competencies">
-                <li>Spoken English workshops: group or one-to-one formats</li>
-                <li>Conversational English for real-life use: travel, work, presentation, socialising</li>
-                <li>Accent clarity, pronunciation drills, fluency practice, role-plays</li>
-                <li>Interview & public speaking coaching: young adults & professionals</li>
-                <li>Regular feedback & personalised improvement plans</li>
-              </ul>
-
-              <h4 className="subhead">Why choose this instructor</h4>
-              <p className="summary">The defence and education background blends discipline with empathy. Learners get a guide who understands how to motivate, challenge and support. Cross-India exposure ensures awareness of diverse student profiles and adaptive teaching approaches.</p>
-
-              <div className="meta">
-                <div className="education">
-                  <strong>Educational credentials:</strong>
-                  <span>B.Sc., B.Ed., M.A. (English), MBA — IGNOU</span>
+          
+          {/* Card 1: Capt Sahana Sundar (Retd.) - Highlighted Profile */}
+          <article className="teacher-card highlight" aria-labelledby="teacher-sahana">
+            <div className="card-content-wrapper">
+              <header className="card-intro">
+                <div className="avatar primary-bg" aria-hidden="true">SS</div>
+                <div>
+                  <h3 id="teacher-sahana">Capt Sahana Sundar (Retd.)</h3>
+                  <p className="role">Spoken English Specialist & Educator (Grades 1–12, CBSE & ICSE)</p>
+                  <span className="location">Chennai, India</span>
                 </div>
+              </header>
+              <div className="card-details">
+                <h4 className="subhead">Professional Summary 🧭</h4>
+                <p className="summary">With over 32 years of disciplined service in the National Cadet Corps (NCC) and vast administrative experience across schools, Capt Sundar brings leadership, discipline, and deep educational insight. She specializes in Spoken English and offers comprehensive tutoring for Grades 1–12 (CBSE & ICSE).</p>
+                <h4 className="subhead">Key Competencies & Education 📚</h4>
+                <ul className="list competence-list">
+                  <li>Mastery of English language (academic & conversational) and exam-preparation skills.</li>
+                  <li>Full-spectrum teaching: primary to senior secondary (Grades 1–12).</li>
+                  <li>In-depth familiarity with CBSE & ICSE frameworks and assessment styles.</li>
+                  <li>Advanced credentials: B.Sc., B.Ed., M.A. (English), MBA (IGNOU).</li>
+                </ul>
+                <h4 className="subhead">Specialist Offerings 🗣️</h4>
+                <ul className="list competence-list">
+                  <li>Spoken English Workshops: Group or one-to-one, focused on accent clarity, pronunciation, and fluency.</li>
+                  <li>Interview & Public Speaking Coaching for young adults and professionals.</li>
+                  <li>Comprehensive curriculum tutoring for Grades 1–12.</li>
+                  <li>Behavioural Mentoring and customised learner-progress tracking.</li>
+                </ul>
               </div>
             </div>
-          </article>
-
-          {/* Profile 2: CBSE/ICSE Teacher */}
-          <article className="teacher-card" aria-labelledby="teacher-cbse">
-            <header className="teacher-card-header">
-              <div className="teacher-avatar alt" aria-hidden="true">TE</div>
-              <div>
-                <h3 id="teacher-cbse">Educator for Classes 1 to 12</h3>
-                <p className="role">CBSE & ICSE — Curriculum & Exam Readiness</p>
+            <footer className="card-footer">
+              <div className="meta-item">
+                <strong>Contact:</strong>
+                <span>8050023212</span>
               </div>
-            </header>
-
-            <div className="teacher-card-body">
-              <h4 className="subhead">Professional summary</h4>
-              <p className="summary">With an accomplished career spanning three decades in the NCC and administrative defence roles bridging schools across India, this educator brings a rich educational leadership background into the mainstream classroom. Now fully dedicated to school education, the focus is on guiding learners from Class 1 through Class 12 under both CBSE and ICSE curricula.</p>
-
-              <h4 className="subhead">Key competencies</h4>
-              <ul className="list competencies">
-                <li>Full spectrum teaching: primary to senior secondary (Grades 1–12)</li>
-                <li>Familiarity with CBSE & ICSE frameworks, assessment styles and curriculum demands</li>
-                <li>Strong foundational subject knowledge and pedagogical training (B.Sc., B.Ed.)</li>
-                <li>Advanced language & management credentials (M.A. English; MBA) enabling handling of both academic subjects and student-mentoring/administration</li>
-                <li>Ability to liaise with school leadership, teachers and students — informed by NCC-administrative experience</li>
-              </ul>
-
-              <h4 className="subhead">Teaching / service highlights</h4>
-              <ul className="list competencies">
-                <li>Extensive tenure in NCC — providing exposure to school ecosystems across states and collaboration with principals and educators</li>
-                <li>Served as teacher in multiple schools, adapting methods for various age groups and academic levels</li>
-                <li>Focused on building conceptual foundations, exam preparation and holistic development in CBSE & ICSE settings</li>
-              </ul>
-
-              <h4 className="subhead">What is offered</h4>
-              <ul className="list competencies">
-                <li>Comprehensive tutoring for Grades 1–12: all major subjects (special strength in English)</li>
-                <li>Curriculum-mapped lesson planning, revision sessions and exam-readiness strategies</li>
-                <li>Behavioural mentoring and study-skill development for senior secondary classes</li>
-                <li>Parent-teacher communication support, customised learner-progress tracking</li>
-                <li>Remedial and enrichment sessions for students needing extra support or aiming for excellence</li>
-              </ul>
-
-              <h4 className="subhead">Why choose this instructor</h4>
-              <p className="summary">More than textbook knowledge: leadership experience, teaching skillset and a deep understanding of schools' operational workings help tailor learning to each student's needs. The approach blends structure, support and inspiration to bring out the best in every learner.</p>
-
-              <div className="meta">
-                <div className="education">
-                  <strong>Educational credentials:</strong>
-                  <span>B.Sc., B.Ed., M.A. (English), MBA — IGNOU</span>
+              <div className="meta-item">
+                <strong>Email:</strong>
+                <span>sundar.sahana@gmail.com</span>
+              </div>
+            </footer>
+          </article>
+          
+          {/* Card 2: SURAJ.S - Science Educator */}
+          <article className="teacher-card" aria-labelledby="teacher-suraj">
+            <div className="card-content-wrapper">
+              <header className="card-intro">
+                <div className="avatar alt-bg" aria-hidden="true">SS</div>
+                <div>
+                  <h3 id="teacher-suraj">SURAJ.S</h3>
+                  <p className="role">Science Educator & Life Science Specialist</p>
+                  <span className="location">Bengaluru, India</span>
                 </div>
+              </header>
+              <div className="card-details">
+                <h4 className="subhead">Professional Summary 🧬</h4>
+                <p className="summary">Passionate Life Science graduate with experience across multiple curricula (CBSE, ICSE, IGCSE). Excels at simplifying complex scientific concepts for students in Grades 6–10 and maintaining productive learning environments.</p>
+                <h4 className="subhead">Core Expertise & Experience 🔬</h4>
+                <ul className="list competence-list">
+                  <li>Curriculum Focus: Grades 6–10 in core sciences (Physics, Chemistry, Biology).</li>
+                  <li>B.Sc. in Life Science (75.05%) from The Oxford College of Science.</li>
+                  <li>Experience as Assistant Teacher and full-time Academic Tutor (since 2021).</li>
+                  <li>Creative & cognitive achievements (e.g., UCMAS, Abacus competitions).</li>
+                </ul>
+                <h4 className="subhead">Key Offerings ✅</h4>
+                <ul className="list competence-list">
+                  <li>In-depth Science tutoring (6th–10th) across major boards.</li>
+                  <li>Effective student mentoring, discipline, and rapport-building.</li>
+                  <li>Regular assessment, paper correction, and actionable feedback.</li>
+                </ul>
               </div>
             </div>
+            <footer className="card-footer">
+              <div className="meta-item">
+                <strong>Contact:</strong>
+                <span>8217095980</span>
+              </div>
+              <div className="meta-item">
+                <strong>Email:</strong>
+                <span>suraj1295shivakumar@gmail.com</span>
+              </div>
+            </footer>
           </article>
+
+          {/* Card 3: R. Vignesh - Aerospace Specialist */}
+          <article className="teacher-card" aria-labelledby="teacher-vignesh">
+            <div className="card-content-wrapper">
+              <header className="card-intro">
+                <div className="avatar tertiary-bg" aria-hidden="true">RV</div>
+                <div>
+                  <h3 id="teacher-vignesh">R. Vignesh</h3>
+                  <p className="role">Aerospace Design & Analysis Specialist</p>
+                  <span className="location">Bengaluru, India</span>
+                </div>
+              </header>
+              <div className="card-details">
+                <h4 className="subhead">Professional Summary 🚀</h4>
+                <p className="summary">Aerospace Engineer with 3+ years of industrial experience at HAL, LTTS, and Safran. Specializes in Computational Analysis (FEA/CFD) and design for UAVs, aero-engines, and commercial aircraft structures.</p>
+                <h4 className="subhead">Technical Expertise 💻</h4>
+                <ul className="list competence-list">
+                  <li>Computational Analysis (FEA/CAE): Nastran/Patran, Abaqus, Mechanical APDL.</li>
+                  <li>Fluid Dynamics (CFD): ANSYS FLUENT/CFX, OpenFOAM, turbulence modeling.</li>
+                  <li>Aero-Engine Performance: cycle calculations, component matching (MATLAB/Excel).</li>
+                  <li>Design & Modeling: UG-NX, CATIA V5.</li>
+                </ul>
+                <h4 className="subhead">Career Highlights ✨</h4>
+                <ul className="list competence-list">
+                  <li>Led non-linear Riks-buckling checks for UAVs (Safran).</li>
+                  <li>Contributed to Chandrayaan-3 mission activities (LEOS-ISRO).</li>
+                  <li>Worked on turbojet design/matching at HAL Aero Engine R&D Centre.</li>
+                  <li>Mentorship & Teaching for Math, Physics, Fluid Mechanics up to JEE Advanced level.</li>
+                </ul>
+              </div>
+            </div>
+            <footer className="card-footer">
+              <div className="meta-item">
+                <strong>Contact:</strong>
+                <span>7975372608</span>
+              </div>
+              <div className="meta-item">
+                <strong>Email:</strong>
+                <span>vikivignesh1416@gmail.com</span>
+              </div>
+            </footer>
+          </article>
+
         </div>
 
-        <div className="teachers-cta">
-          <h3>Book a trial class</h3>
-          <p>Interested in a trial or institution partnership? Reach out and we'll schedule a session tailored to your needs.</p>
-          <a href="#contact" className="btn">Contact Us</a>
+        {/* CTA Section */}
+        <div className="teachers-cta-box">
+          <h3>Ready to Get Started?</h3>
+          <p>Book a trial class or explore partnership opportunities with our highly-qualified team.</p>
+          <a href="#contact" className="btn primary-btn">Request a Trial Class</a>
         </div>
       </div>
     </section>

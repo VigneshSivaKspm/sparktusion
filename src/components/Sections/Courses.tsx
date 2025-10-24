@@ -11,8 +11,20 @@ const Courses = () => {
     {
       id: 2,
       icon: "fa-rocket",
-      title: "JEE / NEET / CET Coaching",
-      description: "Targeted entrance exam coaching with structured modules, practice tests and doubt-clearing sessions for JEE, NEET and CET aspirants."
+      title: "JEE Coaching",
+      description: "Targeted JEE coaching with structured modules, concept-first lessons, topic-wise practice and full-length mock tests for aspirants aiming for engineering entrance exams."
+    },
+    {
+      id: 5,
+      icon: "fa-heartbeat",
+      title: "NEET Coaching",
+      description: "NEET-focused coaching emphasising strong conceptual understanding in Biology, Chemistry and Physics, regular test series and doubt-clearing sessions for medical aspirants."
+    },
+    {
+      id: 6,
+      icon: "fa-chalkboard-teacher",
+      title: "CET Coaching",
+      description: "State CET preparation with curriculum-aligned modules, previous-year paper practice and time-management strategies to maximise scores in competitive state exams."
     },
     {
       id: 3,
