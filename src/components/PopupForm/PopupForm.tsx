@@ -70,6 +70,13 @@ const PopupForm = () => {
     console.log('Popup form submitted', form);
     setVisible(false);
     setForm({ name: '', phone: '', course: '', preferredTime: '' });
+    // Navigate to thank-you overlay
+    try {
+      location.hash = '#thank-you';
+    } catch (err) {
+      // fallback
+      alert('Thanks! Your request has been received.');
+    }
     // TODO: wire to API/CRM
   };
 

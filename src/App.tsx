@@ -1,4 +1,4 @@
-import { useEffect, useState } from 'react';
+import { useEffect, useState, useCallback } from 'react';
 import Header from './components/Header/Header';
 import Hero from './components/Sections/Hero';
 import About from './components/Sections/About';
@@ -10,8 +10,11 @@ import Footer from './components/Footer/Footer';
 import FloatingWhatsApp from './components/FloatingWhatsApp/FloatingWhatsApp';
 import PopupForm from './components/PopupForm/PopupForm';
 import './styles/global.css';
+import ThankYou from './components/ThankYou/ThankYou';
+ 
 
 export default function App() {
+  const [showThank, setShowThank] = useState(false);
   const [scrollProgress, setScrollProgress] = useState(0);
 
   useEffect(() => {
@@ -30,6 +33,20 @@ export default function App() {
       window.removeEventListener('scroll', update);
       window.removeEventListener('resize', update);
     };
+  }, []);
+
+  // listen to hash changes to show/hide thank you overlay
+  useEffect(() => {
+    const checkHash = () => {
+      setShowThank(window.location.hash === '#thank-you');
+    };
+    checkHash();
+    window.addEventListener('hashchange', checkHash);
+    return () => window.removeEventListener('hashchange', checkHash);
+  }, []);
+
+  const onCloseThank = useCallback(() => {
+    setShowThank(false);
   }, []);
   useEffect(() => {
     // Smooth scrolling for anchor links
@@ -80,6 +97,7 @@ export default function App() {
       <Footer />
       <FloatingWhatsApp />
       <PopupForm />
+      {showThank && <ThankYou onClose={onCloseThank} />}
     </>
   );
 }

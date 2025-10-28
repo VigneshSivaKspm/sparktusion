@@ -13,7 +13,14 @@ const Contact = () => {
     e.preventDefault();
     // Replace with your submission logic (API call / CRM integration)
     console.log('Demo booking request:', formData);
-    alert('Thanks! Your free demo request has been received. We will contact you soon.');
+    // Navigate to thank-you overlay
+    try {
+      // set a hash; App listens for this and will show the thank you overlay
+      location.hash = '#thank-you';
+    } catch (err) {
+      // fallback: show a simple alert if hash isn't available
+      alert('Thanks! Your free demo request has been received. We will contact you soon.');
+    }
     setFormData({ name: '', phone: '', course: '', preferredTime: '' });
   };
 
